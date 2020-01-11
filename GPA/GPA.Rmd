@@ -1,0 +1,56 @@
+---
+title: "GPA"
+output: pdf_document
+---
+
+mail: arcadi.navarro@upf.edu
+
+# Genome-Phenome Analysis
+
+## Chapter 1 (8/1/2020)
+
+Phenotype includes the phisical appearence, including proteom and non visible characteristics. 
+A disease is the alteration of any condition that causes different discomforts and/or death. 
+In general there are two differt kind of disseases, although it's not exactly true: comunicable and Non-communicable. Both of them may have genetic components and can be anilysed using genomic approach. 
+
+There is a molecular classification of diseases: exogenous or genetic. In the second case, a relationship can be stablished between DNA and disease: Chromosomopathies (such as deletions, translocations or inversions, duplications...), monogenic diseases (if known, stored in OMIM database, heavily detailed, with its mutations, dominance and several more fields about each gene and disease), mitochondrial diseases (matrilineal inheritance)
+
+Genetical disesases cover a huge range between a mendelian disease (One gen, one disease, and maybe some genes with minor inference) and a complex disease (One gene, several diseases or several genes, one disease). This diseases were the beggining of genetic epidemiology. Genetic epidemiology seeks to explain genetic effect on diseases and how diversity affect the diseases. If both genes and environment affect a disease, how do they relate? Do they interact in some way? In general, a higher enviromental exposure correlates with a higher disease risk. The environment can have different types of correlations: active, passive or reactive (Human behavior makes some relations appear). The Gene-Environment interaction can be expressed as different types of interactions: They are additive, they are inversal, and they increase the other effect.
+
+There are Three Diseases Paradigms:
+
+1. Common disease: disease can be attributed to 10-20 loci, each explaining some percentage of risk
+2. Rare alleles of Major Effect: Several mutations causing individual cases of disease.
+3. Infinitesimal: Thousands of mutations that increases risk of diseases. Higher number of those mutations in genome, higher risk of being sick.
+
+Having one allele related to a disease, you can have different thoughts about how it influences the population: a very rare allele may produce a mendelian inherited disease or need many other mutations to produce a disease. In fact, some diseases that only affect to old people are very common, as when they suffer the disease they already have had children.
+
+If a diesease is genetic, several question rise. In order to determine that a disease is genetic, is important to clear that it is not related to environment. Also it's wise to consider that many genes may affect the disease, directly or indirectly. The first step is to consider if the dissease agregate in families. In mendelian inheritance is quite easy to consider, but complex diseases are far more difficult to be explained by a pedigree. In fact, factors that influence disease can be a bias: age of onset of disease, degree of relatedness, how many relatives are affected. Some siblings are more likely to have a disease if they have a brother or sister that suffers it: this relations are usually studied using twins, as identical twins have 100% genes and environment equal, and fraternal twins (Dizigotyc Twins) share environment but only 50% twins.
+If I compare two DZ which express different phenotype, there is a high chance that there is a genetic difference that afects that genotype.
+
+Heritability means how differences between genes causes differences in phenotype, ranged from 0 to 1. For example, heritability of having two ears is 0, because we all have two ears, the differences between them are cause by environmental differences, not genetic ones. This cause discussion when monogenic and polygenic diseases were compared, untill Ronald Fisher determined that multiple independent gens show continual variation (BTW this Fisher did a lot of things in science, like fisher's test but it was a bastard).
+
+## Chapter 2 (10/01/2020)
+
+This controversies between Mendel law's and Galton quantitative traits generated a great debate in scientific community. In any case, there were exceptions unexplicated by none of them. In some cases, the children showed the average traits of their parents, but other characteristics were fully inherited. After Fisher published his paper about quantitative genetcs, many tratis can be explained using a Gaussian distribution (Fisher's Insight). In fact, the higher the number of genes, alleles and external factos that affect a certain trait, the more accurately a trait can be modelized. In this model, we have several variables that affect our trait. According to basic statistics, we have that $\sigma^2(X+Y) = \sigma^2(X) + \sigma^2(Y)$, including both genetic and environmental factor. Heritability (explained in Chapter 1), is explained by this variance. In plain words, the variance of the phenotype is the sum of variances of genotype and environment.
+
+This variance or heritability (from now on we'll talk about heritability, which is the applied concept) is the fraction of phenotypic variance of a quantitative trait caused by genes, varies from 0 to 1. In fact, vules higher than 0.7 indicate a high relation between genes and phenotype. *Note that heritability, as a variance explain the values IN THE POPULATION; not an individual trait*. Take into account that studing two different populations may result into different estimatiors of heritability as they have different factors and variances. Thus heritability
+
+1. Is not about individuals
+2. Is a parameter of an single population
+3. Heritability is not the same as inheritance
+4. Very low heritability doesn't imply low gene contribution
+
+### Why correlations?
+
+There's genetic variance, but characters will be similar for relatives as they share part of their genes. How does correlation vary with different relatives?. Well, monozygotic twins share 100% of their DNA, but not siblings or half-siblings. Correlation between dizygotic tweens is higher because they share genes and environment.  It's important to make clear that diseases, as any other trait, may be more influenced by environment than genes.
+
+In fact, many diseases are threshold traits: the manifest when there are enough factors to produce it. This risk factors have their heritability and can be inferred from relatives. The risk factos associated to genes can be quantitative, and depending how much alleles asociated we have, the higher the risk we have. Those genes form a Quantitative Trait Loculs (QTL), a genomic region that hold them.
+
+### GPA 4 health
+
+The most important moment for human genome analysis was the release of the Human Genome in 2003 (thanks captain obvious). The first draft provided a lot of descriptive data, including GC content and region with unknown regions. A lot of information was improved after that date and the actual value of 1,5% of coding sequences was established: about 25.000-30.000 coding genes, 23 pairs of chromosomes, 3.2 Gbp and a 53% repetitive sequences; two individuals are 99,9% equal.
+
+These variations can usually be categorized between polymorphism (present in a minimal percentage of the population) and mutations (which appear de novo)
+
+Single nucleotide polymorphims have a frequency of 0.001 and represent 90% of the variation of human sequence. There are SNP-rich region and SNP-poor regions, and depends on the population we are studing how everything is distributed, with different frequencies. (Here explain SNP, satellites, microsatellites and mobile elements)

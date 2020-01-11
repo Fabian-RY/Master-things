@@ -1,0 +1,22 @@
+---
+title: "AST"
+author: "Fabián Robledo"
+output: pdf_document
+---
+
+A sample space $\omega$ is the colection of possible outcomes of an experiment. Depending on the experiments, each element of the sample space have a chance to be the selected outcome, but the possibility of the output to be inside $\omega$ is 1.
+
+For random variables, there are 3 different functions that are particularly interesting: Probability Match function (PMF, for qualitative variables), Probability Density function (for continuous variables) or Cumulated Density function. By throwing a fair coin 3 times, we have a Probability match function, which tells us the possibility to have 0, 1, 2 and 3 heads in our experiment: this gives us a total of $2^3 = 8$ possible outcomes. Getting 0 heads or 3 with a chance of $1/8$ and 1 or 2 with a chance of $3/8$. In this case, the Cumulated density function, F(a) is equal to the chance of getting X or less; for examples F(2) is the chance of getting 2 heads or less ($F(2) = 1/8 + 3/8 = 1/2$). This experiment is a Bernoulli trial, $X$~$Bern(\lambda)$, being $\lambda$ the chance of getting heads. The expectancy of a Bernouilli trial is $E(x) = \sum P(x_i)*x_i$, and in bernoulli trials is always equal to $\lambda$. However, the expectation of the sum of two outcomes is the sum of its expectations. 
+
+There are different distributions that affect the outcome of an experimental random process: continous, geometric, hypergeometric...
+
+## Example: A good or bad teacher
+
+We stablish that a teacher is given a class and the class is good is determined by a bernoulli trial $X$~$Bern(\lambda)$. So we'll go to several classes so we can determine if he/she is a good teacher. By having 8/10 good classes, using frequentist approach we can assume $\lambda = 0.8$ and that is a good teacher. However, after having that hypotesis, we can take a bayesian approach with next classes and readjust your value of $\lambda$, as $P(H|D) = \frac{P(D|H)*P(H)}{P(D)}$
+
+```{python engine.path="/usr/bin/python3"}
+
+import sys
+print(sys.version)
+
+```
