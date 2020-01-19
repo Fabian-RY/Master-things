@@ -6,7 +6,7 @@ output: pdf_document
 
 A sample space $\omega$ is the colection of possible outcomes of an experiment. Depending on the experiments, each element of the sample space have a chance to be the selected outcome, but the possibility of the output to be inside $\omega$ is 1.
 
-For random variables, there are 3 different functions that are particularly interesting: Probability Match function (PMF, for qualitative variables), Probability Density function (for continuous variables) or Cumulated Density function. By throwing a fair coin 3 times, we have a Probability match function, which tells us the possibility to have 0, 1, 2 and 3 heads in our experiment: this gives us a total of $2^3 = 8$ possible outcomes. Getting 0 heads or 3 with a chance of $1/8$ and 1 or 2 with a chance of $3/8$. In this case, the Cumulated density function, F(a) is equal to the chance of getting X or less; for examples F(2) is the chance of getting 2 heads or less ($F(2) = 1/8 + 3/8 = 1/2$). This experiment is a Bernoulli trial, $X$~$Bern(\lambda)$, being $\lambda$ the chance of getting heads. The expectancy of a Bernouilli trial is $E(x) = \sum P(x_i)*x_i$, and in bernoulli trials is always equal to $\lambda$. However, the expectation of the sum of two outcomes is the sum of its expectations. 
+For random variables, there are 3 different functions that are particularly interesting: Probability Match function (PMF, for qualitative variables), Probability Density function (for continuous variables) or Cumulated Density function. By throwing a fair coin 3 times, we have a Probability match function, which tells us the possibility to have 0, 1, 2 and 3 heads in our experiment: this gives us a total of $2^3 = 8$ possible outcomes. Getting 0 heads or 3 with a chance of $1/8$ and 1 or 2 with a chance of $3/8$. In this case, the Cumulated density function, F(a) is equal to the chance of getting X or less; for examples F(2) is the chance of getting 2 heads or less ($F(2) = 1/8 + 3/8 = 1/2$). This experiment is a Bernoulli trial, $X$~$Bern(\lambda)$, being $\lambda$ the chance of getting heads. The expectancy of a Bernouilli trial is $E(x) = \sum P(x_i)*x_i$, and in bernoulli trials is always equal to $\lambda$. However, the expectation of the sum of two outcomes is the sum of its expectations.
 
 There are different distributions that affect the outcome of an experimental random process: continous, geometric, hypergeometric...
 
@@ -20,3 +20,9 @@ import sys
 print(sys.version)
 
 ```
+
+## Markov-chains Montecarlo
+
+For noisy gene data, we can assume that data follows a Poisson distribtuion. In fact, it can be an split function with several $\lambda$ values, all of which follow an exponential distribtuion, while $\tau$ (the value that separates $\lambda$), follows an uniform distribution. This results in a high-dimensional space, which dificultes calculus of the probabilities. 
+
+In a markov chain, in every item, we have a chance to move forward the next item of the graph or stay in the same item. Ths can be summarize into a matrix, from which we can make a
