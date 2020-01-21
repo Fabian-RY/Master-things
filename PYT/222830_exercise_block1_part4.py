@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-def Fasta_iterator(fasta_filename):
+def FASTA_iterator(fasta_filename):
     seq = ""
     file = open(fasta_filename)
     id = file.readline()[1:].strip()
@@ -38,13 +38,13 @@ def compare_fasta_file_identifiers( fasta_filenames_list ):
     data["frequency"] = frequency
     # Check uniqus
     specific = {}
-    for id in frequency:
-        if frequency[id] == 1:
-            for file_ in elements:
-                if (not file_ in specific): specific[file_] = set()
-                if id in elements[file_]: specific[file_].add(id)
+    for file_ in elements:
+            specific[file_] = elements[file_]
+            for file_2 in elements:
+                if (file_ != file_2):
+                    print(file_, file_2)
+                    print(specific[file_], elements[file_2])
+                    specific[file_] = specific[file_].difference(elements[file_2])
+                    print(specific[file_])
     data["specific"] = specific
     return data
-
-archivo_list=["fasta1.fa","fasta2.fa","fasta3.fa","fasta4.fa"]
-print(compare_fasta_file_identifiers(archivo_list))
